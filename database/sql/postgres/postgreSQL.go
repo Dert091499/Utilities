@@ -10,7 +10,7 @@ import (
 	"gorm.io/gorm"
 	"gorm.io/gorm/logger"
 
-	"github.com/Dert12318/Utilities/database/sql"
+	"github.com/Dert091499/Utilities/database/sql"
 )
 
 type PostgresDatabaseManager struct {

@@ -5,8 +5,8 @@ import (
 
 	"github.com/labstack/echo/v4"
 
-	"github.com/Dert12318/Utilities/logs"
-	"github.com/Dert12318/Utilities/validator"
+	"github.com/Dert091499/Utilities/logs"
+	"github.com/Dert091499/Utilities/validator"
 )
 
 type (

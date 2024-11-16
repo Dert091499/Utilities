@@ -4,8 +4,8 @@ import (
 	"context"
 	"sync"
 
-	tntContext "github.com/Dert12318/Utilities/context"
-	constantError "github.com/Dert12318/Utilities/errors"
+	tntContext "github.com/Dert091499/Utilities/context"
+	constantError "github.com/Dert091499/Utilities/errors"
 )
 
 type singleEventDispatcher struct {

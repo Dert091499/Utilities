@@ -1,8 +1,8 @@
 package messaging
 
 import (
-	"github.com/Dert12318/Utilities/context"
-	"github.com/Dert12318/Utilities/logs"
+	"github.com/Dert091499/Utilities/context"
+	"github.com/Dert091499/Utilities/logs"
 )
 
 const (

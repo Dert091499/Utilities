@@ -1,7 +1,7 @@
 package jsontier
 
 import (
-	"github.com/Dert12318/Utilities/encoding"
+	"github.com/Dert091499/Utilities/encoding"
 	jsoniter "github.com/json-iterator/go"
 )
 

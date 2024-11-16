@@ -8,9 +8,9 @@ import (
 	"github.com/Shopify/sarama"
 	"github.com/google/uuid"
 
-	"github.com/Dert12318/Utilities/apm"
-	tntContext "github.com/Dert12318/Utilities/context"
-	"github.com/Dert12318/Utilities/messaging"
+	"github.com/Dert091499/Utilities/apm"
+	tntContext "github.com/Dert091499/Utilities/context"
+	"github.com/Dert091499/Utilities/messaging"
 )
 
 const (

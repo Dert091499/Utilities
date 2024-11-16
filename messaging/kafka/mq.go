@@ -8,11 +8,11 @@ import (
 	"github.com/Shopify/sarama"
 	"github.com/pkg/errors"
 
-	tntContext "github.com/Dert12318/Utilities/context"
-	"github.com/Dert12318/Utilities/encoding"
-	jsoniter "github.com/Dert12318/Utilities/encoding/jsontier"
-	"github.com/Dert12318/Utilities/logs/logrus"
-	"github.com/Dert12318/Utilities/messaging"
+	tntContext "github.com/Dert091499/Utilities/context"
+	"github.com/Dert091499/Utilities/encoding"
+	jsoniter "github.com/Dert091499/Utilities/encoding/jsontier"
+	"github.com/Dert091499/Utilities/logs/logrus"
+	"github.com/Dert091499/Utilities/messaging"
 )
 
 type kafka struct {

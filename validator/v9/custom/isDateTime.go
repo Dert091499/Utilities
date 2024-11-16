@@ -3,8 +3,8 @@ package custom
 import (
 	"time"
 
-	timeConstant "github.com/Dert12318/Utilities/common/constant/time"
-	"github.com/Dert12318/Utilities/common/functions"
+	timeConstant "github.com/Dert091499/Utilities/common/constant/time"
+	"github.com/Dert091499/Utilities/common/functions"
 	v9 "gopkg.in/go-playground/validator.v9"
 )
 

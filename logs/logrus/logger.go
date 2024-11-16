@@ -4,7 +4,7 @@ import (
 	"io"
 	"os"
 
-	"github.com/Dert12318/Utilities/logs"
+	"github.com/Dert091499/Utilities/logs"
 	"github.com/labstack/gommon/log"
 	"github.com/pkg/errors"
 	"github.com/rifflock/lfshook"

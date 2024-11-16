@@ -7,7 +7,7 @@ import (
 	"github.com/labstack/echo/v4"
 	"go.uber.org/zap"
 
-	"github.com/Dert12318/Utilities/models/v2"
+	"github.com/Dert091499/Utilities/models/v2"
 )
 
 var (

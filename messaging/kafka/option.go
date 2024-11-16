@@ -6,8 +6,8 @@ import (
 	"github.com/Shopify/sarama"
 	"github.com/pkg/errors"
 
-	"github.com/Dert12318/Utilities/apm"
-	"github.com/Dert12318/Utilities/logs"
+	"github.com/Dert091499/Utilities/apm"
+	"github.com/Dert091499/Utilities/logs"
 )
 
 const (

@@ -13,7 +13,7 @@ import (
 	"github.com/labstack/gommon/log"
 	"gopkg.in/DataDog/dd-trace-go.v1/profiler"
 
-	"github.com/Dert12318/Utilities/logs/logrus"
+	"github.com/Dert091499/Utilities/logs/logrus"
 )
 
 type (

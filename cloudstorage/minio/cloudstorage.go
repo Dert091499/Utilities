@@ -9,7 +9,7 @@ import (
 	"github.com/minio/minio-go/v7"
 	"github.com/minio/minio-go/v7/pkg/credentials"
 
-	"github.com/Dert12318/Utilities/cloudstorage"
+	"github.com/Dert091499/Utilities/cloudstorage"
 )
 
 type (

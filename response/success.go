@@ -5,7 +5,7 @@ import (
 
 	"github.com/labstack/echo/v4"
 
-	"github.com/Dert12318/Utilities/models/v2"
+	"github.com/Dert091499/Utilities/models/v2"
 )
 
 func (r *HttpResponse) SuccessResponse(ec echo.Context, message string, data interface{}) error {
