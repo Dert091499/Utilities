@@ -1,4 +1,4 @@
-package structutils
+package structutil
 
 import (
 	"errors"
@@ -6,7 +6,7 @@ import (
 )
 
 // ParseStruct parses values from `from` to `to` based on matching JSON tags.
-// Supports nested structs and provides optimized mapping.
+// Supports nested structs and arrays/slices of structs.
 func ParseStruct(from, to interface{}) error {
 	fromVal := reflect.ValueOf(from)
 	toVal := reflect.ValueOf(to)
@@ -43,6 +43,12 @@ func buildTagMap(fromType reflect.Type, fromVal reflect.Value) map[string]reflec
 			continue
 		}
 
+		// Handle slices of structs
+		if field.Type.Kind() == reflect.Slice && field.Type.Elem().Kind() == reflect.Struct {
+			tagToField[field.Tag.Get("json")] = value
+			continue
+		}
+
 		// Map JSON tag to the field value
 		tag := field.Tag.Get("json")
 		if tag != "" {
@@ -69,6 +75,27 @@ func setStructValues(tagToField map[string]reflect.Value, toElem reflect.Value) 
 				if err != nil {
 					return err
 				}
+			}
+			continue
+		}
+
+		// Handle slices of structs in `to`
+		if toFieldValue.Kind() == reflect.Slice && toFieldValue.Type().Elem().Kind() == reflect.Struct {
+			fromSlice, exists := tagToField[toTag]
+			if exists && fromSlice.Kind() == reflect.Slice {
+				newSlice := reflect.MakeSlice(toFieldValue.Type(), fromSlice.Len(), fromSlice.Cap())
+
+				for j := 0; j < fromSlice.Len(); j++ {
+					fromElem := fromSlice.Index(j)
+					toElem := reflect.New(toFieldValue.Type().Elem()).Elem()
+					err := setStructValues(buildTagMap(fromElem.Type(), fromElem), toElem)
+					if err != nil {
+						return err
+					}
+					newSlice.Index(j).Set(toElem)
+				}
+
+				toFieldValue.Set(newSlice)
 			}
 			continue
 		}
