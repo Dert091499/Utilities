@@ -1,4 +1,4 @@
-package structutil
+package parse
 
 import (
 	"errors"
