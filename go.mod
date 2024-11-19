@@ -1,6 +1,6 @@
 module github.com/Dert091499/Utilities
 
-go 1.18
+go 1.23.2
 
 require (
 	github.com/Shopify/sarama v1.38.0
